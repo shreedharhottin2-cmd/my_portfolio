@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1120;
+      color: #f1f5f9;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 8%;
+      border-bottom: 1px solid #263247;
+    }
+
+    header h2 {
+      color: #4ade80;
+    }
+
+    nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      margin-left: 18px;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .hero {
+      min-height: 65vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero p {
+      color: #94a3b8;
+      max-width: 550px;
+      margin: 15px 0;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 58px);
+      line-height: 1.2;
+    }
+
+    .green {
+      color: #4ade80;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #4ade80;
+      color: #0b1120;
+      padding: 12px 22px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+      width: fit-content;
+      margin-top: 12px;
+    }
+
+    h2 {
+      margin-bottom: 18px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #151f32;
+      border: 1px solid #29364d;
+      padding: 24px;
+      border-radius: 12px;
+    }
+
+    .card p, #about p {
+      color: #94a3b8;
+      margin: 10px 0;
+    }
+
+    .card a, footer a {
+      color: #4ade80;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      border-top: 1px solid #263247;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 18px 5%;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 12px;
+        font-size: 14px;
+      }
+
+      section {
+        padding: 55px 6%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>MyPortfolio.</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p class="green">HELLO, WORLD! 👋</p>
+    <h1>I'm a CSE Student<br>
+      Learning to <span class="green">Build.</span>
+    </h1>
+    <p>
+      I am a computer science student passionate about
+      programming, technology, and creating useful projects.
+      This is where my journey begins.
+    </p>
+    <a class="btn" href="#projects">Explore My Projects →</a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a third-year Computer Science and Engineering
+      student. I am learning programming and improving
+      my development skills by building projects.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+
+      <div class="card">
+        <h3>My Portfolio</h3>
+        <p>A personal website to introduce myself and showcase my work.</p>
+        <a href="#contact">Coming soon</a>
+      </div>
+
+      <div class="card">
+        <h3>JarvisStudy</h3>
+        <p>An AI study assistant idea to help students organize their learning.</p>
+        <a href="#contact">Coming soon</a>
+      </div>
+
+      <div class="card">
+        <h3>Future Project</h3>
+        <p>More ideas, experiments, and projects will be added here.</p>
+        <a href="#contact">Coming soon</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Let's Connect</h2>
+    <p>Follow my learning journey and check out my future work.</p>
+    <p style="margin-top: 15px;">
+      <a class="btn" href="https://github.com/" target="_blank"
+         rel="noopener noreferrer">My GitHub →</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>Built with ❤️ by Me | © 2026</p>
+  </footer>
+
+</body>
+</html>
